@@ -83,6 +83,14 @@ function dragEnd() {
         turns += 1;
         document.getElementById("turns").innerText = turns;
     }
-
-
+       
+    
+    if ( turns >= 50) {
+            document.getElementById("turns").innerText = ("Nincs több forgatásod!")
+            dragEnd();
+    }
+        
+       
+        
+    
 }
